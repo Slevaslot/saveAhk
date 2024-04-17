@@ -1,4 +1,4 @@
-﻿#MaxHotkeysPerInterval 500
+#MaxHotkeysPerInterval 500
 
 F12::Suspend
 
@@ -213,6 +213,10 @@ while (GetKeyState("Control","P") & GetKeyState(5,"P"))
 return
 
 
+$y::
+while (GetKeyState("y","P"))
+	Send {Blind}{y}
+return
 
 
 $q::
